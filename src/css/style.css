@@ -1,3 +1,14 @@
+:root {
+  --color-primary: #640ec7;
+  --color-secondary: #7a2fd1;
+  --color-background: #d9d5e2;
+  --color-scroll-background: #bdb1da;
+  --color-text-light: #666;
+  --color-title-light: #3f3f3f;
+  --color-text-lighter: #eee;
+  --color-text-dark: #111;
+}
+
 body,
 h1,
 h2,
@@ -23,8 +34,8 @@ ul {
 }
 
 body {
-  background: #c5c5b8;
-  color: #454545;
+  background: var(--color-background);
+  color: var(--color-text-light);
   display: grid;
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -33,7 +44,8 @@ body {
   grid-column: 3 / 5;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background: #640ec7;
+  background: var(--color-primary);
+  border-radius: 0.25rem;
 }
 
 .menu ul {
@@ -46,11 +58,16 @@ body {
   display: block;
   padding: 12px;
   margin-right: 12px;
-  color: #cdcdcd;
+  color: var(--color-text-lighter);
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 0.1rem;
+}
+
+.menu li a:hover {
+  color: var(--color-text-light);
+  transition: 500ms;
 }
 
 .grid-section {
@@ -66,6 +83,7 @@ body {
 }
 
 .titulo {
+  color: var(--color-title-light);
   font-size: 6rem;
   line-height: 1;
   font-weight: 400;
@@ -78,20 +96,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
-  color: #640ec7;
+  color: var(--color-primary);
 }
 
 .animais h2::before {
   content: '';
   display: inline-block;
-  width: 40px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: #732cc5;
+  width: 2rem;
+  height: 0.625rem;
+  margin-right: 0.625rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-primary);
 }
 
 .animais p {
-  color: #111;
+  color: var(--color-text-dark);
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -107,13 +126,14 @@ body {
 }
 
 .animais-lista::-webkit-scrollbar-thumb {
-  background-color: #732cc5;
-  border-left: 3px solid #e0dfc1;
-  border-right: 3px solid #e0dfc1;
+  background-color: var(--color-primary);
+  border-left: 3px solid var(--color-scroll-background);
+  border-right: 3px solid var(--color-scroll-background);
+  border-radius: 0.25rem;
 }
 
 .animais-lista::-webkit-scrollbar-track {
-  background-color: #c0bfa5;
+  background-color: var(--color-scroll-background);
 }
 
 .animais-descricao {
@@ -133,16 +153,18 @@ body {
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2.5rem;
-  color: #732cc5;
+  border-radius: 0.05rem;
+  color: var(--color-primary);
 }
 
 .faq-lista dt::before {
   content: '';
   display: inline-block;
-  width: 25px;
-  height: 10px;
-  margin-right: 10px;
-  background-color: #732cc5;
+  width: 1.5rem;
+  height: 0.625rem;
+  margin-right: 0.625rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-primary);
 }
 
 .faq-lista dd {
@@ -160,7 +182,7 @@ body {
 }
 
 .dados li {
-  color: #8a5bc0;
+  color: var(--color-primary);
   font-weight: 500;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -173,18 +195,19 @@ body {
   margin-right: 1rem;
   width: 1.25rem;
   height: 0.5rem;
-  background-color: #732cc5;
+  border-radius: 0.75rem;
+  background-color: var(--color-primary);
 }
 
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 2rem;
-  background-color: #8a5bc0;
+  background-color: var(--color-secondary);
 }
 
 .copy p {
   padding: 1.25rem;
-  color: #c5c5b8;
+  color: var(--color-background);
 }
 
 @media (max-width: 700px) {
