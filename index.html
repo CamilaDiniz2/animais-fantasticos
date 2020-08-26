@@ -14,229 +14,249 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/style.css" />
+
     <script>
       document.documentElement.className += ' js';
     </script>
   </head>
   <body>
-    <nav class="menu js-menu">
-      <ul>
-        <li><a href="#animais">Animais</a></li>
-        <li><a href="#faq"> Faq</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="https://github.com/CamilaDiniz2">Dev</a></li>
-        <li><a class="changeLighterToDark">Dark</a></li>
-        <li><a class="aumentarTexto">A+</a></li>
-      </ul>
-    </nav>
+    <div class="grid-container">
+      <nav class="menu js-menu">
+        <ul>
+          <li><a href="#animais">Animais</a></li>
+          <li><a href="#faq"> Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a data-modal="abrir" href="login.html">Login</a>
+          </li>
+          <li><a class="changeLighterToDark">Dark</a></li>
+          <li><a class="aumentarTexto">A+</a></li>
+        </ul>
+      </nav>
 
-    <section class="grid-section animais js-scroll" id="animais">
-      <h1 class="titulo">Animais Fantásticos</h1>
-      <ul class="animais-lista js-tabMenu">
-        <li>
-          <img src="./src/img/imagem1.jpg" />
-        </li>
-        <li>
-          <img src="./src/img/imagem2.jpg" />
-        </li>
-        <li>
-          <img src="./src/img/imagem3.jpg" />
-        </li>
-        <li>
-          <img src="./src/img/imagem4.jpg" />
-        </li>
-        <li>
-          <img src="./src/img/imagem5.jpg" />
-        </li>
-        <li>
-          <img src="./src/img/imagem6.jpg" />
-        </li>
-      </ul>
+      <section class="grid-section animais js-scroll" id="animais">
+        <h1 class="titulo">Animais Fantásticos</h1>
 
-      <div class="animais-descricao js-tabContent">
-        <section>
-          <h2>Raposa</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
-            laudantium modi dolore quasi deleniti dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            hic.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla,
-            blanditiis distinctio similique ipsum maiores?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            totam saepe labore impedit ut ex dolore, accusamus vero doloremque
-            velit!
-          </p>
-        </section>
-        <section>
-          <h2>Esquilo</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
-            laudantium modi dolore quasi deleniti dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            hic.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla,
-            blanditiis distinctio similique ipsum maiores?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            totam saepe labore impedit ut ex dolore, accusamus vero doloremque
-            velit!
-          </p>
-        </section>
-        <section>
-          <h2>Urso</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
-            laudantium modi dolore quasi deleniti dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            hic.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla,
-            blanditiis distinctio similique ipsum maiores?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            totam saepe labore impedit ut ex dolore, accusamus vero doloremque
-            velit!
-          </p>
-        </section>
-        <section>
-          <h2>Lobo</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
-            laudantium modi dolore quasi deleniti dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            hic.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla,
-            blanditiis distinctio similique ipsum maiores?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            totam saepe labore impedit ut ex dolore, accusamus vero doloremque
-            velit!
-          </p>
-        </section>
-        <section>
-          <h2>Macaco</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
-            laudantium modi dolore quasi deleniti dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            hic.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla,
-            blanditiis distinctio similique ipsum maiores?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            totam saepe labore impedit ut ex dolore, accusamus vero doloremque
-            velit!
-          </p>
-        </section>
-        <section>
-          <h2>Leão</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-            vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
-            laudantium modi dolore quasi deleniti dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-            hic.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla,
-            blanditiis distinctio similique ipsum maiores?
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-            totam saepe labore impedit ut ex dolore, accusamus vero doloremque
-            velit!
-          </p>
-        </section>
+        <ul class="animais-lista js-tabMenu">
+          <li>
+            <img src="./src/img/imagem1.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem2.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem3.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem4.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem5.jpg" />
+          </li>
+          <li>
+            <img src="./src/img/imagem6.jpg" />
+          </li>
+        </ul>
+
+        <div class="animais-descricao js-tabContent">
+          <section>
+            <h2>Raposa</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
+              laudantium modi dolore quasi deleniti dolor.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+              hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nulla, blanditiis distinctio similique ipsum maiores?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi totam saepe labore impedit ut ex dolore, accusamus vero
+              doloremque velit!
+            </p>
+          </section>
+          <section>
+            <h2>Esquilo</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
+              laudantium modi dolore quasi deleniti dolor.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+              hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nulla, blanditiis distinctio similique ipsum maiores?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi totam saepe labore impedit ut ex dolore, accusamus vero
+              doloremque velit!
+            </p>
+          </section>
+          <section>
+            <h2>Urso</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
+              laudantium modi dolore quasi deleniti dolor.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+              hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nulla, blanditiis distinctio similique ipsum maiores?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi totam saepe labore impedit ut ex dolore, accusamus vero
+              doloremque velit!
+            </p>
+          </section>
+          <section>
+            <h2>Lobo</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
+              laudantium modi dolore quasi deleniti dolor.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+              hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nulla, blanditiis distinctio similique ipsum maiores?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi totam saepe labore impedit ut ex dolore, accusamus vero
+              doloremque velit!
+            </p>
+          </section>
+          <section>
+            <h2>Macaco</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
+              laudantium modi dolore quasi deleniti dolor.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+              hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nulla, blanditiis distinctio similique ipsum maiores?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi totam saepe labore impedit ut ex dolore, accusamus vero
+              doloremque velit!
+            </p>
+          </section>
+          <section>
+            <h2>Leão</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              vero recusandae facere enim omnis. Quisquam non aliquam eveniet in
+              laudantium modi dolore quasi deleniti dolor.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
+              hic.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              nulla, blanditiis distinctio similique ipsum maiores?
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi totam saepe labore impedit ut ex dolore, accusamus vero
+              doloremque velit!
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="grid-section faq js-scroll" id="faq">
+        <h2 class="subtitulo">FAQ</h2>
+        <dl class="faq-lista js-accordion">
+          <dt>Qual é a idade dos animais?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            deserunt consequuntur quos ad, at cum quia autem exercitationem
+            eaque accusamus sit, possimus eum numquam corrupti. Neque at quasi
+            ipsum blanditiis.
+          </dd>
+          <dt>Eles são fantásticos?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            voluptate aut provident tempore ipsa explicabo qui porro repellendus
+            ratione quibusdam!
+          </dd>
+          <dt>Qual a diferença ?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+            maxime.
+          </dd>
+          <dt>Como proteger ?</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            voluptate aut provident tempore ipsa explicabo qui porro repellendus
+            ratione quibusdam!
+          </dd>
+        </dl>
+      </section>
+
+      <section class="grid-section contato js-scroll" id="contato">
+        <h2 class="subtitulo">Contato</h2>
+        <div class="mapa">
+          <img src="./src/img/mapa.png" />
+        </div>
+        <ul class="dados">
+          <li>contato@email.com</li>
+          <li>+55 (81) 99999-9999</li>
+          <li>Rua XXXXXX, n 123</li>
+          <li>Recife - PE</li>
+        </ul>
+      </section>
+
+      <footer class="copy">
+        <p>Todos os direitos reservados</p>
+        <p>
+          <a target="_blank" href="https://icons8.com/icons/set/funny-zebra"
+            >Zebra icon</a
+          >
+          icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+      </footer>
+    </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" />
+
+          <button type="submit">Entrar</button>
+        </form>
       </div>
     </section>
 
-    <section class="grid-section faq js-scroll" id="faq">
-      <h2 class="subtitulo">FAQ</h2>
-      <dl class="faq-lista js-accordion">
-        <dt>
-          Qual é a idade dos animais?
-        </dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          deserunt consequuntur quos ad, at cum quia autem exercitationem eaque
-          accusamus sit, possimus eum numquam corrupti. Neque at quasi ipsum
-          blanditiis.
-        </dd>
-        <dt>Eles são fantásticos?</dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          voluptate aut provident tempore ipsa explicabo qui porro repellendus
-          ratione quibusdam!
-        </dd>
-        <dt>Qual a diferença ?</dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, maxime.
-        </dd>
-        <dt>Como proteger ?</dt>
-        <dd>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          voluptate aut provident tempore ipsa explicabo qui porro repellendus
-          ratione quibusdam!
-        </dd>
-      </dl>
-    </section>
-
-    <section class="grid-section contato js-scroll" id="contato">
-      <h2 class="subtitulo">Contato</h2>
-      <div class="mapa">
-        <img src="./src/img/mapa.png" />
-      </div>
-      <ul class="dados">
-        <li>contato@email.com</li>
-        <li>+55 (81) 99999-9999</li>
-        <li>Rua XXXXXX, n 123</li>
-        <li>Recife - PE</li>
-      </ul>
-    </section>
-
-    <footer class="copy">
-      <p>Todos os direitos reservados</p>
-      <div class="referencias">
-        <a target="_blank" href="https://icons8.com/icons/set/funny-zebra"
-          >Zebra icon</a
-        >
-        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-      </div>
-    </footer>
-
-    <script src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/script.js"></script>
   </body>
 </html>
