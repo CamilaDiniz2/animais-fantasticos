@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.: Animais Fantásticos</title>
     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="./src/img/animal-icon.png"
       type="image/x-icon"
@@ -24,10 +30,23 @@
       <nav class="menu js-menu">
         <ul>
           <li><a href="#animais">Animais</a></li>
-          <li><a href="#faq"> Faq</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Socios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
           <li>
-            <a data-modal="abrir" href="login.html">Login</a>
+            <a href="#faq"> Faq</a>
+          </li>
+          <li>
+            <a href="#contato">Contato </a>
+          </li>
+          <li>
+            <a data-modal="abrir" href="login.html" class="login"> Login</a>
           </li>
           <li><a class="changeLighterToDark">Dark</a></li>
           <li><a class="aumentarTexto">A+</a></li>
@@ -220,7 +239,11 @@
 
       <section class="grid-section contato js-scroll" id="contato">
         <h2 class="subtitulo">Contato</h2>
-        <div class="mapa">
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento"
+        >
           <img src="./src/img/mapa.png" />
         </div>
         <ul class="dados">

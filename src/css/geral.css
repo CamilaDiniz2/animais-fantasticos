@@ -1,11 +1,11 @@
 :root {
   --color-primary: #e05809;
   --color-secondary: #e06218;
-  --color-background: #b0b4b0;
+  --color-background: #dbe2db;
   --color-scroll-background: #e2844e;
   --color-text-light: rgb(43, 42, 42);
   --color-title-light: #807a7a;
-  --color-text-lighter: #eee;
+  --color-text-lighter: #fff;
   --color-text-dark: #111;
 }
 
@@ -58,7 +58,7 @@ body.dark {
 .dark {
   background-color: var(--color-text-dark);
   color: var(--color-background);
-  transition: 1000ms;
+  transition: 500ms;
 }
 
 .dark h1 {
@@ -96,6 +96,11 @@ body.dark {
   cursor: pointer;
 }
 
+.menu i {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+
 .aumentarTexto,
 .changeLighterToDark {
   background-color: var(--color-background);
@@ -118,7 +123,7 @@ body.dark {
 }
 
 .menu li a:hover {
-  opacity: 1;
+  color: var(--color-background);
   transition: 500ms;
 }
 
